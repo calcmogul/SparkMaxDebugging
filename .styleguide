@@ -1,0 +1,34 @@
+cppHeaderFileInclude {
+  \.h$
+  \.hpp$
+  \.inl$
+  \.inc$
+}
+
+cppSrcFileInclude {
+  \.cpp$
+}
+
+modifiableFileExclude {
+  gradle/
+}
+
+includeCppSys {
+  experimental/
+}
+
+includeOtherLibs {
+  Eigen/
+  frc/
+  frc2/
+  gtest/
+  hal/
+  mockdata/
+  networktables/
+  rev/.*?\.h$
+  simulation/
+  units/
+  unsupported/
+  wpi/
+  cscore\.h$
+}
